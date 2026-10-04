@@ -1,20 +1,12 @@
-# MY PROJECTS
-# 📊 Research Projects — Kislay Jha
+# Research Projects
 
-[![GitHub](https://img.shields.io/badge/GitHub-k98j-181717?logo=github)](https://github.com/k98j)
+A collection of small-scale research projects exploring **Computer Vision, Reinforcement Learning, World Models, Representation Learning, and related areas of Machine Learning**.
 
-A portfolio of Implementations of Architectures and Research Papers along with Independent Research Projects.
+The goal of this repository is not simply to implement models, but to **study research ideas through implementation, controlled experimentation, failure analysis, and hypothesis-driven investigation**.
 
-## 📉 Gradient Descent from Scratch
-**Tech:** Python · NumPy · Matplotlib
+## Research Areas:
+### Computer Vision
+### Reinforcement Learning
+### World Models & 3D Generation
+### Representation Learning
 
-Implemented foundational gradient descent optimization algorithms from scratch using raw NumPy array operations. Formulated mathematical cost functions, computed analytical gradients, and visualized convergence dynamics across varying learning rates and batching strategies (Batch, Mini-Batch, and Stochastic).
-
-Key skills: First-Principles Math · Optimization Algorithms · Gradient Computation · Convergence Analysis
-
-## 🧠 Multi-Layer Perceptron (MLP) from Scratch
-**Tech:** Python · NumPy · Matplotlib
-
-Built a fully customizable Deep Neural Network from first principles using pure NumPy without high-level ML frameworks. Engineered forward propagation, automated backpropagation with full matrix calculus derivatives, vectorization, and activation functions (ReLU, Sigmoid, Softmax) for multi-class classification tasks.
-
-Key skills: Neural Network Architecture · Backpropagation Calculus · Matrix Operations · Deep Learning Fundamentals
