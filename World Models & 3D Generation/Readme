@@ -1,0 +1,183 @@
+# World Models & 3D Generation
+
+Research-oriented experiments exploring how learning systems **represent, predict, and reason about environments**.
+
+The projects in this directory sit at the intersection of:
+
+* **World Models**
+* **Reinforcement Learning**
+* **Visual Representation Learning**
+* **Geometric Understanding**
+* **3D / 4D Scene Understanding**
+* **Predictive Modelling**
+
+The central question connecting these projects is:
+
+> **What does a learning system need to represent about the world in order to predict and reason about it effectively?**
+
+---
+
+## Research Direction
+
+Rather than attempting to reproduce large-scale systems in full, these projects isolate individual ideas from modern research and investigate them through lightweight experiments.
+
+The current projects examine complementary perspectives:
+
+```text
+Visual Representation
+        ↓
+Geometric Structure
+        ↓
+Learned Dynamics
+        ↓
+World Models
+        ↓
+Prediction & Imagination
+```
+
+---
+
+## Projects
+
+### 1. Geometric Invariance of Visual Representations
+
+**Research Question:**
+When an image undergoes a geometric transformation, does a pretrained visual representation preserve its semantic identity?
+
+This experiment studies representation similarity under transformations such as:
+
+* Rotation
+* Cropping
+* Scaling
+* Horizontal flipping
+
+using pretrained vision models.
+
+The core idea is to examine:
+
+$$
+x \rightarrow f(x)=z
+$$
+
+and evaluate whether:
+
+$$
+\mathrm{sim}(f(x), f(T(x)))
+$$
+
+remains high when \(T(x)\) preserves the underlying visual identity.
+
+**Focus:** *Representation Learning · Geometric Invariance · Visual Embeddings*
+
+---
+
+### 2. Long-Horizon Failure of Learned World Models
+
+**Research Question:**
+Does accurate one-step prediction imply accurate long-horizon prediction?
+
+A lightweight learned dynamics model is trained to predict:
+
+$$
+(s_t, a_t) \rightarrow s_{t+1}
+$$
+
+The model is then recursively rolled forward using its own predictions to investigate how prediction errors accumulate with increasing rollout horizon.
+
+The experiment additionally investigates the effect of **distribution shift** between the behaviour used to collect training data and the behaviour encountered during evaluation.
+
+**Focus:** *World Models · Learned Dynamics · Autoregressive Rollouts · Reinforcement Learning*
+
+---
+
+### 3. Mini Ping Pong World Models
+
+A lightweight experiment exploring the basic mechanics of learning and predicting the dynamics of an interactive visual environment.
+
+The project provides an intuitive bridge between:
+
+```text
+Observation
+     ↓
+Representation
+     ↓
+Dynamics
+     ↓
+Prediction
+     ↓
+Action / Interaction
+```
+
+The objective is to understand the basic ingredients required for a system to construct an internal predictive model of an environment.
+
+**Focus:** *Visual Dynamics · World Models · Interactive Environments*
+
+---
+
+## Common Research Questions
+
+Across these projects, I am particularly interested in:
+
+* How should an environment be represented?
+* Which information should a representation preserve or discard?
+* Can a learned model capture the underlying dynamics of an environment?
+* Why do prediction errors accumulate during imagined rollouts?
+* How does representation quality affect prediction and planning?
+* What breaks when a model encounters conditions outside its training distribution?
+* Can better representations lead to more reliable world models?
+
+---
+
+## Experimental Philosophy
+
+The projects follow a common methodology:
+
+1. **Identify a concrete research question**
+2. **Isolate one component of a larger research system**
+3. **Build the smallest experiment capable of testing the question**
+4. **Measure a meaningful quantity**
+5. **Investigate failure cases**
+6. **Interpret the observed behaviour**
+7. **Formulate the next experiment**
+
+The goal is to move beyond:
+
+> *"Does the model work?"*
+
+towards:
+
+> *"Why does the model work, when does it fail, and what can we learn from that failure?"*
+
+---
+
+## Compute Constraint
+
+These experiments are intentionally lightweight and primarily developed using **free Google Colab**.
+
+The emphasis is therefore placed on:
+
+> **Research Question → Experimental Design → Measurement → Analysis**
+
+rather than computational scale.
+
+---
+
+## Future Directions
+
+Future experiments in this area will explore:
+
+* **Latent World Models**
+* **Model-Based Reinforcement Learning**
+* **Visual Dynamics**
+* **Representation Learning**
+* **3D / 4D Scene Understanding**
+* **Multi-Agent Environments**
+* **Spatial Intelligence**
+* **Planning in Learned Environments**
+* **Generative World Models**
+
+---
+
+## Research Themes
+
+**World Models · Reinforcement Learning · Computer Vision · Geometry · Representation Learning · 3D / 4D Vision**
